@@ -9,8 +9,8 @@ export type Props = {
     }
   ];
   title?: string;
-  weatherNews?: [
-    currrent: {
+  weather?: {
+    current: {
       temp: number;
       clouds: number;
       weather: [
@@ -19,22 +19,6 @@ export type Props = {
           icon: string;
         }
       ];
-    }
-  ];
-  daily?: [
-    date: {
-      dt: number;
-      clouds: number;
-      temp: {
-        min: number;
-        max: number;
-      };
-      weather: [
-        condidiotions: {
-          id: number;
-          icon: string;
-        }
-      ];
-    }
-  ];
+    };
+  };
 };
